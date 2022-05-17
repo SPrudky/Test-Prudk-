@@ -24,12 +24,38 @@ namespace Test_Prudký
         {
             InitializeComponent();
         }
+        
+        
+
+        private void Go_Click(object sender, RoutedEventArgs e)
+        {
+            int m = 0;
+            try
+            {
+                m = int.Parse(gotext.Text);
+                gotext.Text = m.ToString();
+                
+            }
+             catch
+            {
+                gotext.Text  += 10;
+                
+            }
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            int m = 0;
+            try
+            {
+                m = int.Parse(gotext.Text);
+                gotext.Text = m.ToString();
+            }
+            catch
+            {
+                gotext.Text   += 20;
+            }
+            
         }
-
-        
     }
 }

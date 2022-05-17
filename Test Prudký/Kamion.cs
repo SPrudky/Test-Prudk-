@@ -27,7 +27,10 @@ namespace Test_Prudký
 
 
         }
-        
+       public void Go(int distance)
+        {
+            
+        }
     
 
 
